@@ -6,56 +6,62 @@
   :root {
     --font-title: 'Oswald', sans-serif;
     --font-body: 'Lora', serif;
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
-    --primary: 220.9 39.3% 11%;
-    --primary-foreground: 210 20% 98%;
-    --primary-dark: 210 20% 60%;
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220.9 39.3% 11%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-    --caution: 52 76% 34%;
-    --caution-foreground: 52 76% 34%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 224 71.4% 4.1%;
+    --background: hsl(0, 0%, 100%); /* White background for light mode */
+    --foreground: hsl(0, 0%, 20%); /* Dark gray text color */
+    --card: hsl(0, 0%, 100%); /* White card background */
+    --card-foreground: hsl(0, 0%, 20%); /* Dark gray text on card */
+    --card-border: hsl(0, 0%, 90%); /* Light gray border for card */
+    --popover: hsl(0, 0%, 100%); /* White popover background */
+    --popover-foreground: hsl(0, 0%, 20%); /* Dark gray text on popover */
+    --primary: hsl(0, 0%, 20%); /* Dark gray for primary elements */
+    --primary-foreground: hsl(0, 0%, 99%); /* Nearly white text on primary elements */
+    --primary-dark: #CBB5A7; /* Dark sand color for primary dark mode */
+    --secondary: hsl(0, 0%, 97%); /* Very light gray for secondary elements */
+    --secondary-foreground: hsl(0, 0%, 20%); /* Dark gray text on secondary elements */
+    --muted: hsl(0, 0%, 95%); /* Light gray for muted elements */
+    --muted-foreground: hsl(0, 0%, 60%); /* Medium gray text for muted elements */
+    --accent: hsl(0, 0%, 95%); /* Light gray for accent elements */
+    --accent-foreground: hsl(0, 0%, 20%); /* Dark gray text on accent elements */
+    --destructive: hsl(0, 84.2%, 60.2%); /* Destructive actions (e.g., red) */
+    --destructive-foreground: hsl(0, 0%, 98%); /* Nearly white text on destructive elements */
+    --caution: hsl(52, 76%, 34%); /* Caution color (yellow) */
+    --caution-foreground: hsl(52, 76%, 34%); /* Yellow text for caution elements */
+    --border: hsl(0, 0%, 91%); /* Light gray border */
+    --input: hsl(0, 0%, 91%); /* Light gray for input backgrounds */
+    --ring: hsl(0, 0%, 20%); /* Dark gray ring color for focus states */
+    --footer-background: hsl(0, 0%, 90%); /* Light gray background for footer */
+    --footer-text: hsl(0, 0%, 20%); /* Dark gray text color for footer */
     --radius: 0.5rem;
-    --custom-color: 29 20% 80%;
+    --custom-color: #D0BFB4; /* Custom color example */
   }
 
   .dark {
     --font-title: 'Oswald', sans-serif;
     --font-body: 'Lora', serif;
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
-    --primary-dark: 210 20% 60%;
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
-    --custom-color: 29 20% 80%;
+    --background: hsl(0, 0%, 10%); /* Dark gray background for dark mode */
+    --foreground: hsl(0, 0%, 90%); /* Light gray text color for dark mode */
+    --card: hsl(0, 0%, 10%); /* Dark gray card background */
+    --card-foreground: hsl(0, 0%, 90%); /* Light gray text on dark card */
+    --card-border: hsl(0, 0%, 30%); /* Dark gray border for card */
+    --popover: hsl(0, 0%, 10%); /* Dark gray popover background */
+    --popover-foreground: hsl(0, 0%, 90%); /* Light gray text on dark popover */
+    --primary: hsl(0, 0%, 90%); /* Light gray for primary elements */
+    --primary-foreground: hsl(0, 0%, 10%); /* Dark gray text on primary elements */
+    --primary-dark: #CBB5A7; /* Dark sand color for dark mode */
+    --secondary: hsl(0, 0%, 20%); /* Dark gray for secondary elements */
+    --secondary-foreground: hsl(0, 0%, 90%); /* Light gray text on secondary elements */
+    --muted: hsl(0, 0%, 20%); /* Dark gray for muted elements */
+    --muted-foreground: hsl(0, 0%, 70%); /* Medium gray text for muted elements */
+    --accent: hsl(0, 0%, 20%); /* Dark gray for accent elements */
+    --accent-foreground: hsl(0, 0%, 90%); /* Light gray text on accent elements */
+    --destructive: hsl(0, 62.8%, 30.6%); /* Red for destructive actions */
+    --destructive-foreground: hsl(0, 0%, 90%); /* Light gray text on destructive elements */
+    --border: hsl(0, 0%, 20%); /* Dark gray border for dark mode */
+    --input: hsl(0, 0%, 20%); /* Dark gray input background */
+    --ring: hsl(0, 0%, 80%); /* Light gray ring color for focus states */
+    --footer-background: hsl(0, 0%, 30%); /* Dark gray background for footer */
+    --footer-text: hsl(0, 0%, 90%); /* Light gray text color for footer */
+    --custom-color: #D0BFB4; /* Custom color example */
   }
 
   * {
@@ -111,5 +117,38 @@
 
   li {
     @apply mb-2;
+  }
+
+  footer {
+    @apply bg-[var(--footer-background)] text-[var(--footer-text)] py-4 text-center;
+    @apply md:px-8 lg:px-12; /* Responsive padding */
+  }
+
+  .card {
+    @apply bg-card border border-[var(--card-border)] rounded-lg shadow-md;
+  }
+
+  @media (max-width: 640px) {
+    .card {
+      @apply p-4; /* Add padding for mobile devices */
+    }
+  }
+
+  @media (min-width: 640px) {
+    .card {
+      @apply p-6; /* Add padding for small screens and up */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      @apply p-8; /* Add padding for medium screens and up */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .card {
+      @apply p-10; /* Add padding for large screens and up */
+    }
   }
 }

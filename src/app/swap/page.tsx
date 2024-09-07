@@ -113,8 +113,11 @@ export default function SwapPage() {
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {actionCards.map((item, key) => (
             <Link key={key} href={item.href}>
-              <a className="group">
-                <Card className="group-hover:border-sand transition-colors duration-300 border-2 rounded-lg shadow-md hover:shadow-lg dark:border-white dark:hover:border-sand h-full">
+              <a
+                aria-label={item.title}
+                className="group"
+              >
+                <Card className="group-hover:border-sand transition-all duration-300 border-2 rounded-lg shadow-md hover:shadow-lg dark:border-white dark:hover:border-sand h-full">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2 text-lg font-semibold">
                       {item.icon}
@@ -129,7 +132,9 @@ export default function SwapPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
-                    <p className="text-lightGrey dark:text-sand">{item.description}</p>
+                    <p className="text-lightGrey dark:text-sand">
+                      {item.description}
+                    </p>
                   </CardContent>
                 </Card>
               </a>

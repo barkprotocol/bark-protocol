@@ -23,10 +23,10 @@ const colors = {
   black: "#000000",
   green: "#10B981",
   blue: "#3B82F6",
-  sand: "#CBB5A7",
+  sand: "#D4B88C", // Updated sand color
+  orange: "#FF6F00", // Updated orange color
 };
 
-// Array of payment-related action cards with title, href, description, and icon
 const actionCards = [
   {
     title: "Integrate MedusaJS",
@@ -182,7 +182,7 @@ const PaymentsPage: React.FC = () => {
           {actionCards.map((item, key) => (
             <Link key={key} href={item.href}>
               <a className="group">
-                <Card className="group-hover:border-sand transition-colors duration-300 border-2 rounded-lg shadow-md hover:shadow-lg dark:border-white dark:hover:border-sand h-full">
+                <Card className={`group-hover:border-sand transition-colors duration-300 border-2 rounded-lg shadow-md hover:shadow-lg dark:border-white dark:hover:border-sand h-full`}>
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2 text-lg font-semibold">
                       {item.icon}

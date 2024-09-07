@@ -16,9 +16,9 @@ const labelVariants = cva(
         large: "text-base",
       },
       color: {
-        default: "text-gray-700",
-        primary: "text-sand-500",
-        secondary: "text-gray-500",
+        default: "text-gray-700", // Default color
+        primary: "text-sand-500", // Primary color variant
+        secondary: "text-gray-500", // Secondary color variant
       },
     },
     defaultVariants: {

@@ -10,12 +10,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-black text-white",
-        primary: "bg-blue-600 text-white hover:bg-blue-700", // Example primary style
+        primary: "bg-black-600 text-white hover:bg-black-700",
         destructive: "bg-red-600 text-white hover:bg-red-700",
         outline: "border border-black text-black hover:bg-black hover:text-white",
         secondary: "bg-sand text-black hover:bg-sand/80",
         ghost: "text-black hover:bg-black hover:text-white",
         link: "text-blue-600 underline hover:text-blue-700",
+        dark: "bg-white text-black dark:bg-black dark:text-white", // Dark theme variant
+        sand: "bg-sand text-black hover:bg-sand/80", // Sand color variant
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -36,6 +38,8 @@ export interface ButtonProps
     VariantProps<typeof buttonVariants> {
   /** If true, renders as a `Slot` component instead of a `button`. */
   asChild?: boolean;
+  /** Additional class names to be applied to the button. */
+  className?: string;
 }
 
 /**

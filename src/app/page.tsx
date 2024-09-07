@@ -6,20 +6,18 @@ import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  FileTextIcon,
-  GiftIcon,
   CreditCardIcon,
+  GiftIcon,
   CoinsIcon,
   ImageIcon,
-  ImagesIcon,
+  ShoppingCartIcon,
   HeartIcon,
   TrophyIcon,
   VoteIcon,
+  ChartBarIcon,
   UserIcon,
-  ShoppingCartIcon,
-  ChartBarIcon
 } from "lucide-react";
-import { FaTwitter, FaTelegram, FaDiscord, FaMedium, FaGithub } from "react-icons/fa"; // Social icons
+import { FaTwitter, FaTelegram, FaDiscord, FaMedium, FaGithub } from "react-icons/fa";
 
 // Define color variables for consistent styling
 const colors = {
@@ -27,8 +25,8 @@ const colors = {
   lightGrey: "#9CA3AF", // Lighter gray for text
   white: "#FFFFFF", // Pure white
   black: "#000000", // Pure black
-  orange: "#F97316", // Modern orange
-  sand: "#CBB5A7", // Sand color
+  lightSand: "#CBB5A7", // Modern sand
+  sand: "#D0BFB4", // Sand color
 };
 
 // Array of action cards with title, href, description, and icon
@@ -119,10 +117,10 @@ export default function Page() {
         <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black dark:text-white">
           About
         </h3>
-        <p className="max-w-2xl text-lg leading-relaxed text-grey sm:text-xl sm:leading-8">
+        <p className="max-w-2xl text-lg leading-relaxed text-grey dark:text-sand sm:text-xl sm:leading-8">
           We harness the power of Solana’s blockchain to offer innovative solutions for managing digital assets, marketplace, staking NFTs, and more.
         </p>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-col sm:flex-row">
           <Link href="/shop" className={cn(buttonVariants({ size: "lg", variant: "default" }))}>
             Shop
           </Link>
@@ -155,8 +153,8 @@ export default function Page() {
 
         {/* Action Cards */}
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {actionCards.map((item, key) => (
-            <Link key={key} href={item.href} className="group">
+          {actionCards.map((item, index) => (
+            <Link key={index} href={item.href} className="group block">
               <Card className="group-hover:border-sand transition-colors duration-300 border-2 rounded-lg shadow-md hover:shadow-lg dark:border-white dark:hover:border-sand h-full">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-lg font-semibold">
@@ -165,7 +163,7 @@ export default function Page() {
                       {item.title}
                     </span>
                     {item.badge && (
-                      <span className="ml-2 inline-block rounded-full bg-orange px-2 py-1 text-xs font-medium text-white">
+                      <span className="ml-2 inline-block rounded-full bg-lightGrey px-2 py-1 text-xs font-medium text-white">
                         {item.badge}
                       </span>
                     )}
@@ -191,7 +189,7 @@ export default function Page() {
               </Link>
             </Button>
             <Button variant="link" asChild>
-              <Link href="https://telegram.com/t.me/bark-protocol" target="_blank" className="text-sand">
+              <Link href="https://telegram.com/t/me/bark-protocol" target="_blank" className="text-sand">
                 <FaTelegram className="w-6 h-6" />
               </Link>
             </Button>

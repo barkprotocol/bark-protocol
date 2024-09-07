@@ -11,7 +11,7 @@ const iconSrc = "/icon.png";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
-    <footer className={cn(className, "bg-sand text-black border-t border-gray-200 shadow-md")}>
+    <footer className={cn(className, "bg-white text-black border-t border-gray-200 shadow-md")}>
       <div className="container flex flex-col items-center justify-between gap-8 py-6 md:flex-row md:py-8">
         
         {/* Site Info */}
@@ -19,34 +19,14 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           {/* Site icon */}
           <Image
             src={iconSrc}
-            alt="Site Icon"
+            alt="BARK Protocol Icon"
             width={34}
             height={34}
-            className="text-sand"
+            className="text-black"
             aria-hidden="true"
           />
           <p className="text-center text-sm leading-relaxed md:text-left">
-            © 2024 BARK Protocol.{" "}
-            <a
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-sand hover:text-orange-600 hover:underline transition-colors"
-              aria-label="Follow BARK Protocol on Twitter"
-            >
-              All rights reserved
-            </a>
-            . Source code is available on{" "}
-            <a
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-sand hover:text-orange-600 hover:underline transition-colors"
-              aria-label="View the BARK Protocol source code on GitHub"
-            >
-              GitHub
-            </a>
-            .
+            © 2024 BARK Protocol. All rights reserved.
           </p>
         </div>
 
@@ -54,18 +34,19 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
         <nav className="flex flex-col items-center gap-4 md:flex-row md:gap-6">
           <Button asChild>
             <Link
-              href={siteConfig.links.docs}
+              href={siteConfig.links.docs || "#"}
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
                 buttonVariants({ variant: "secondary", size: "sm" }),
-                "px-4 py-2 rounded-md"
+                "px-4 py-2 rounded-md text-white bg-black hover:bg-gray-700"
               )}
+              aria-label="View Terms of Use"
             >
               Terms of Use
             </Link>
           </Button>
-          <ThemeModeToggle />
+          <ThemeModeToggle aria-label="Toggle theme mode" />
         </nav>
       </div>
     </footer>
