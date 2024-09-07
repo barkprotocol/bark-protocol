@@ -87,8 +87,10 @@ export default function StakePage() {
             Staking is a powerful way to earn rewards and contribute to the ecosystem. Explore our staking options, manage your positions, and track your rewards with ease. Our platform offers various features to help you get the most out of your staking activities, whether you're a seasoned staker or just starting.
           </p>
           <div className="flex gap-4">
-            <Link href="/stake/start" className={cn(buttonVariants({ size: "lg", variant: "primary" }))}>
-              Start Staking
+            <Link href="/stake/start">
+              <a className={cn(buttonVariants({ size: "lg", variant: "primary" }))}>
+                Start Staking
+              </a>
             </Link>
           </div>
         </section>
@@ -118,25 +120,27 @@ export default function StakePage() {
         {/* Action Cards */}
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {actionCards.map((item, key) => (
-            <Link key={key} href={item.href} className="group">
-              <Card className="group-hover:border-sand transition-colors duration-300 border-2 rounded-lg shadow-md hover:shadow-lg dark:border-white dark:hover:border-sand h-full">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-lg font-semibold">
-                    {item.icon}
-                    <span className="block font-semibold group-hover:text-sand">
-                      {item.title}
-                    </span>
-                    {item.badge && (
-                      <span className="ml-2 inline-block rounded-full bg-green px-2 py-1 text-xs font-medium text-white">
-                        {item.badge}
+            <Link key={key} href={item.href}>
+              <a className="group">
+                <Card className="group-hover:border-sand transition-colors duration-300 border-2 rounded-lg shadow-md hover:shadow-lg dark:border-white dark:hover:border-sand h-full">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-lg font-semibold">
+                      {item.icon}
+                      <span className="block font-semibold group-hover:text-sand">
+                        {item.title}
                       </span>
-                    )}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-lightGrey dark:text-sand">{item.description}</p>
-                </CardContent>
-              </Card>
+                      {item.badge && (
+                        <span className="ml-2 inline-block rounded-full bg-green px-2 py-1 text-xs font-medium text-white">
+                          {item.badge}
+                        </span>
+                      )}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-2">
+                    <p className="text-lightGrey dark:text-sand">{item.description}</p>
+                  </CardContent>
+                </Card>
+              </a>
             </Link>
           ))}
         </div>

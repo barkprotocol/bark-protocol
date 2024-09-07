@@ -2,14 +2,26 @@
 
 Welcome to the Bark Protocol! This landing page is designed to enhance digital asset management on the Solana blockchain, focusing on innovative solutions for NFTs, products, payments, and governance.
 
+## Landing Page
 ![Bark Protocol](.github/screenshot.png)
+
+## Features
+
+### Staking
+![Staking](.github/staking.png)
+- **Staking**: Earn rewards and participate in governance by staking your NFTs.
+
+### E-Commerce Payment Gateways
+![Payments](.github/payments.png)
+- **MedusaJS**: Integrate the open-source headless commerce platform with flexible payment gateways.
+- **WooCommerce**: Power your WordPress site with WooCommerce and a wide range of payment integrations.
+- **Shopify**: Use Shopify to set up your e-commerce store with built-in payment gateways and scalability.
 
 ## Website and Blogger Generator
 
 This repository serves as the website and blogger generator for Bark Protocol, bootstrapped using the [BARK - Blink Actions Tool](https://github.com/barkprotocol/blink-actions-tool).
 
-## Features
-
+### Features
 - **Customizable Website Generation**: Quickly generate and deploy websites for your projects using our tools.
 - **Blogger Integration**: Seamlessly integrate blog functionalities into your website.
 - **Enhanced Digital Experience**: Leverage our platform for managing NFTs, payments, and more on Solana.
@@ -45,6 +57,7 @@ We welcome contributions to improve the Bark Protocol. Please refer to our [cont
 
 ## References
 
+- **Solana Pay**: https://docs.solanapay.com/core/transfer-request/merchant-integration
 - **Icons**: [Lucide Icons](https://lucide.dev/icons/)
 
 ## License

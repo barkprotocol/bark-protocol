@@ -123,7 +123,7 @@ export default function Page() {
           We harness the power of Solana’s blockchain to offer innovative solutions for managing digital assets, marketplace, staking NFTs, and more.
         </p>
         <div className="flex gap-4">
-          <Link href="/shop" className={cn(buttonVariants({ size: "lg", variant: "primary" }))}>
+          <Link href="/shop" className={cn(buttonVariants({ size: "lg", variant: "default" }))}>
             Shop
           </Link>
           <Link href="https://swap.barkprotocol.net" className={cn(buttonVariants({ size: "lg", variant: "outline" }))}>
@@ -185,36 +185,32 @@ export default function Page() {
             Follow Us
           </h5>
           <div className="flex justify-center space-x-4 mt-4">
-            <Button variant={"link"} asChild>
+            <Button variant="link" asChild>
               <Link href="https://x.com/bark_protocol" target="_blank" className="text-sand">
                 <FaTwitter className="w-6 h-6" />
               </Link>
             </Button>
-            <Button variant={"link"} asChild>
+            <Button variant="link" asChild>
               <Link href="https://telegram.com/t.me/bark-protocol" target="_blank" className="text-sand">
                 <FaTelegram className="w-6 h-6" />
               </Link>
             </Button>
-            <Button variant={"link"} asChild>
+            <Button variant="link" asChild>
               <Link href="https://discord.com/invite/bark-protocol" target="_blank" className="text-sand">
                 <FaDiscord className="w-6 h-6" />
               </Link>
             </Button>
-            <Button variant={"link"} asChild>
+            <Button variant="link" asChild>
               <Link href="https://medium.com/@bark_protocol" target="_blank" className="text-sand">
                 <FaMedium className="w-6 h-6" />
               </Link>
             </Button>
-            <Button variant={"link"} asChild>
+            <Button variant="link" asChild>
               <Link href="https://github.com/bark-protocol" target="_blank" className="text-sand">
                 <FaGithub className="w-6 h-6" />
               </Link>
             </Button>
           </div>
-
-          <p className="text-lightGrey dark:text-sand mt-6">
-            Stay updated with our latest news and announcements. Connect with us on social media.
-          </p>
         </div>
       </section>
     </>
