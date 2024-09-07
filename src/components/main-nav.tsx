@@ -36,11 +36,11 @@ export function MainNav({ items = [], children }: MainNavProps) {
         <Image
           src={
             siteConfig.logoUrl ||
-            "https://ucarecdn.com/74392932-2ff5-4237-a1fa-e0fd15725ecc/bark.svg"
+            "https://ucarecdn.com/0c2a1b21-f836-4343-9d35-19386c7f7f4d/barkprotocoldark.svg"
           }
           alt={`${siteConfig.name} Logo`}
-          width={40}
-          height={40}
+          width={125}
+          height={125}
           className="rounded-full"
         />
         <span className="hidden font-bold sm:inline-block">
@@ -52,17 +52,20 @@ export function MainNav({ items = [], children }: MainNavProps) {
       {items.length > 0 && (
         <nav className="hidden gap-2 md:flex">
           {items.map((item) => (
-            <Button key={item.href} variant="link" asChild>
+            <Button
+              key={item.href}
+              variant="link"
+              asChild
+            >
               <Link
                 href={item.disabled ? "#" : item.href}
                 className={cn(
                   "flex items-center text-lg font-medium transition-colors",
-                  item.href.startsWith(`/${segment}`)
-                    ? "text-foreground"
-                    : "text-foreground/60",
-                  item.disabled && "cursor-not-allowed opacity-70"
+                  item.href.startsWith(`/${segment}`) ? "text-foreground" : "text-foreground/60",
+                  item.disabled && "cursor-not-allowed opacity-60"
                 )}
                 aria-disabled={item.disabled}
+                aria-current={item.href.startsWith(`/${segment}`) ? "page" : undefined}
               >
                 {item.title}
               </Link>

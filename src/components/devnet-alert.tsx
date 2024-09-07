@@ -8,9 +8,12 @@ export function DevnetAlert() {
       <div className="flex flex-col">
         <AlertTitle className="font-semibold">Devnet ONLY</AlertTitle>
         <AlertDescription>
-          This example action is configured to run on Solana&apos;s devnet. Make
-          sure your wallet is set to devnet when testing this transaction.
+          This action is configured to run on Solana&apos;s devnet network. 
+          Please ensure your wallet is set to devnet when testing this transaction.
         </AlertDescription>
+        <div className="mt-2 text-sm text-gray-600">
+          <p>Network: <strong>Devnet</strong></p>
+        </div>
       </div>
     </Alert>
   );

@@ -14,12 +14,9 @@ import { Icons } from "@/components/icons";
 export function ThemeModeToggle() {
   const { setTheme, theme } = useTheme();
 
-  // Ensure setTheme is defined before calling it
   const handleSetTheme = React.useCallback(
     (theme: "light" | "dark" | "system") => {
-      if (setTheme) {
-        setTheme(theme);
-      }
+      setTheme(theme);
     },
     [setTheme]
   );

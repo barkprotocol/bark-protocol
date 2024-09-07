@@ -5,7 +5,7 @@ import * as LabelPrimitive from "@radix-ui/react-label";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-// Define label variants using CVA
+// Define variants for the Label component
 const labelVariants = cva(
   "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70",
   {
@@ -16,7 +16,7 @@ const labelVariants = cva(
         large: "text-base",
       },
       color: {
-        default: "text-gray-700", // Default color
+        default: "text-gray-700", // Default color for labels
         primary: "text-sand-500", // Primary color variant
         secondary: "text-gray-500", // Secondary color variant
       },
@@ -31,7 +31,13 @@ const labelVariants = cva(
 type LabelProps = React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root> &
   VariantProps<typeof labelVariants>;
 
-// Label component using forwardRef to pass refs to Radix Label
+/**
+ * Label component using Radix UI's Label and variant styles.
+ * 
+ * @param {LabelProps} props - The props for the Label component.
+ * @param {React.Ref} ref - The ref to forward to the Label component.
+ * @returns {JSX.Element} The rendered Label component.
+ */
 const Label = React.forwardRef<React.ElementRef<typeof LabelPrimitive.Root>, LabelProps>(
   ({ className, size, color, ...props }, ref) => (
     <LabelPrimitive.Root

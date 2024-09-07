@@ -15,11 +15,11 @@ const Navbar = () => {
         <div className="navbar-logo flex items-center">
           <Link href="/">
             <img
-              src="https://ucarecdn.com/74392932-2ff5-4237-a1fa-e0fd15725ecc/bark.svg"
+              src="https://ucarecdn.com/dd264726-4f83-4a3a-b36b-bad0fb3f58a5/logolight.png"
               alt="BARK Protocol Logo"
-              className="h-12"
+              className="h-10"
             />
-            <p className="text-2xl font-bold ml-2">BARK Protocol</p>
+            <p className="text-2xl font-bold ml-2"></p>
           </Link>
         </div>
         <div className="hamburger" onClick={toggleMenu}>

@@ -204,7 +204,7 @@ export default function Page() {
               </Link>
             </Button>
             <Button variant="link" asChild>
-              <Link href="https://github.com/bark-protocol" target="_blank" className="text-sand">
+              <Link href="https://github.com/barkprotocol" target="_blank" className="text-sand">
                 <FaGithub className="w-6 h-6" />
               </Link>
             </Button>
