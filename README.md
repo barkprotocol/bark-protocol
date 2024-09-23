@@ -1,65 +1,83 @@
-# Bark Protocol
+# BARK Protocol
 
-Welcome to the Bark Protocol! This landing page is designed to enhance digital asset management on the Solana blockchain, focusing on innovative solutions for NFTs, products, payments, and governance.
+![BARK Protocol Logo]([https://ucarecdn.com/0c2a1b21-f836-4343-9d35-19386c7f7f4d/barkprotocoldark.svg?height=200&width=200)
 
-## Landing Page
-![Bark Protocol](.github/screenshot.png)
+## 🐾 Unleashing the Power of Solana
 
-## Features
+BARK Protocol is an innovative, all-in-one platform designed for Solana users, offering a seamless and intuitive experience within the Solana ecosystem. Our mission is to simplify and enhance the way users interact with decentralized finance (DeFi) applications, making blockchain technology more accessible and user-friendly.
 
-### Staking
-![Staking](.github/staking.png)
-- **Staking**: Earn rewards and participate in governance by staking your NFTs.
+## 🚀 Features
 
-### E-Commerce Payment Gateways
-![Payments](.github/payments.png)
-- **MedusaJS**: Integrate the open-source headless commerce platform with flexible payment gateways.
-- **WooCommerce**: Power your WordPress site with WooCommerce and a wide range of payment integrations.
-- **Shopify**: Use Shopify to set up your e-commerce store with built-in payment gateways and scalability.
+- 🏦 **Wallet Management**: Securely store, send, and receive Solana-based tokens.
+- 📊 **Asset Dashboard**: Comprehensive view of your asset balances across the Solana ecosystem.
+- 💸 **Transaction Execution**: Fast and low-fee transactions leveraging Solana's high-performance blockchain.
+- 🎁 **Donation Management**: Create, manage, and track donation campaigns for various causes.
+- 💰 **Crowdfunding**: Launch and participate in fundraising initiatives within the Solana community.
+- 🥩 **Staking**: Stake SOL and other supported tokens directly from the platform.
+- 💳 **Payment Solutions**: Send and receive payments in various Solana-based tokens, with options for recurring payments and invoicing.
+- 🔄 **Token Swapping**: Effortlessly swap between Solana-based tokens with competitive rates and minimal slippage.
+- 🐕 **BARK Protocol Integration**: Participate in unique BARK features and governance decisions.
+- 🛠 **Customized Utilities**: Access tailored tools to enhance your Solana experience.
 
-## Website and Blogger Generator
+## 🛠️ Getting Started
 
-This repository serves as the website and blogger generator for Bark Protocol, bootstrapped using the [BARK - Blink Actions Tool](https://github.com/barkprotocol/blink-actions-tool).
+### Prerequisites
 
-### Features
-- **Customizable Website Generation**: Quickly generate and deploy websites for your projects using our tools.
-- **Blogger Integration**: Seamlessly integrate blog functionalities into your website.
-- **Enhanced Digital Experience**: Leverage our platform for managing NFTs, payments, and more on Solana.
+- Node.js (v18 or later)
+- npm or yarn
+- Solana CLI tools (v1.18 or later)
+- Rust (latest stable version)
 
-## Installation
+### Installation
 
-To get started, clone the repository and install the dependencies:
+1. Clone the repository:
 
-```bash
-git clone https://github.com/barkprotocol/bark-protocol.git
-cd bark-protocol
-pnpm install
+   ```bash
+   git clone https://github.com/barkprotocol/bark-protocol.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd bark
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+4. Build the project:
+
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+6. Visit `http://localhost:3000` to see the app running.
+
+### Environment Setup
+
+Ensure you have the necessary environment variables set up. Create a `.env.local` file and configure it with the following keys:
+
+```env
+NEXT_PUBLIC_SOLANA_NETWORK=devnet
+NEXT_PUBLIC_SUPABASE_URL=<your-supabase-url>
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-supabase-anon-key>
+NEXT_PUBLIC_RPC_URL=https://api.devnet.solana.com
 ```
+## Licence
 
-## Usage
-
-To start the development server, run:
-
-```bash
-pnpm run dev
-```
-
-For production builds, use:
-
-```bash
-pnpm run build
-pnpm start
-```
-
-## Contributing
-
-We welcome contributions to improve the Bark Protocol. Please refer to our [contributing guidelines](docs/CONTRIBUTING.md) for more details.
-
-## References
-
-- **Solana Pay**: https://docs.solanapay.com/core/transfer-request/merchant-integration
-- **Icons**: [Lucide Icons](https://lucide.dev/icons/)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Mit Licence
